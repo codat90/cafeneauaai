@@ -61,3 +61,40 @@ function getItemActiveIndex() {
 }
 
 // CAROUSEL ENDS HERE
+
+// FAQ STARTS HERE
+
+document.addEventListener("DOMContentLoaded", function () {
+	var faqQuestions = document.querySelectorAll(".faq-question");
+
+	faqQuestions.forEach(function (question) {
+		question.addEventListener("click", function () {
+			var answer = this.nextElementSibling;
+			var icon = this.querySelector(".faq-icon");
+
+			if (answer.style.maxHeight) {
+				answer.style.maxHeight = null;
+				this.classList.remove("active");
+				icon.classList.replace("fa-minus", "fa-plus"); // Change icon to "+"
+			} else {
+				answer.style.maxHeight = answer.scrollHeight + "px";
+				this.classList.add("active");
+				icon.classList.replace("fa-plus", "fa-minus"); // Change icon to "-"
+			}
+
+			// Close other answers
+			faqQuestions.forEach(function (otherQuestion) {
+				if (otherQuestion !== question) {
+					otherQuestion.nextElementSibling.style.maxHeight = null;
+					otherQuestion.classList.remove("active");
+					var otherIcon = otherQuestion.querySelector(".faq-icon");
+					otherIcon.classList.replace("fa-minus", "fa-plus"); // Ensure other icons are "+"
+				}
+			});
+		});
+	});
+});
+
+
+
+// FAQ ENDS HERE
