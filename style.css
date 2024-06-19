@@ -397,12 +397,7 @@ body {
 	align-items: center;
 }
 
-
-.faq-item:nth-child(2) button {
-	border-radius: 20px 20px 0 0;
-}
-
-.faq-item:nth-child(5) button {
+.faq-item:nth-child(6) button {
 	border-radius: 20px 20px 0 0;
 	border-radius: 0 0 20px 20px;
 }
@@ -419,7 +414,7 @@ body {
 	font-size: 1.2rem;
 }
 
-.faq-item:nth-child(5) .faq-answer {
+.faq-item:last-child .faq-answer {
 	border-radius: 0 0 20px 20px;
 }
 
