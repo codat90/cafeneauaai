@@ -262,12 +262,11 @@ body {
 #main-text {
 	background-color: #ffffff;
 	position: relative;
-	width: 40%;
-	left: 5%;
+	width: 70%;
 	border-radius: 40px;
 	padding: 1% 3% 1% 3%;
 	box-shadow: 0 0 1.5em 0.2em rgb(73, 73, 73);
-	margin-bottom: 10%;
+	margin: 0 auto 4% auto;
 }
 
 .text-overlay {
@@ -285,15 +284,15 @@ body {
 #testimonials {
 	background-color: #ffffff;
 	position: relative;
-	width: 35%;
-	right: 5%;
+	width: 32%;
+	left: 12%;
+	margin-bottom: 10%;
 	border-radius: 40px;
 	padding: 1% 3% 1% 3%;
 	box-shadow: 0 0 1.5em 0.2em rgb(73, 73, 73);
-	float: right;
 }
 
-.fa-solid {
+#testimonials .fa-solid {
 	color: #ab98ff;
 	font-size: 2.5rem;
 	transform: translateY(4px);
@@ -360,13 +359,115 @@ body {
 	width: 100%;
 }
 
+.faq-section {
+	position: relative;
+	width: 32%;
+	right: 12%;
+	border-radius: 30px;
+	margin: 0;
+	background-color: #ffffff;
+	padding-top: 1px;
+	box-shadow: 0px 0px 1.5rem rgb(73, 73, 73);
+	float: right;
+}
+
+.faq-section h2 {
+	text-align: center;
+}
+
+.faq-item {
+	margin-bottom: 0;
+}
+
+.faq-question {
+	position: relative;
+	width: 100%;
+	padding: 3%;
+	text-align: left;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.faq-item:nth-child(2) button {
+	border-radius: 20px 20px 0 0;
+}
+
+.faq-item:nth-child(5) button {
+	border-radius: 20px 20px 0 0;
+	border-radius: 0 0 20px 20px;
+}
+
+.faq-item:last-child button.active {
+	border-radius: 0;
+}
+
+.faq-answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.1s ease-out;
+	background-color: #ffffff;
+	font-size: 1.2rem;
+}
+
+.faq-item:nth-child(5) .faq-answer {
+	border-radius: 0 0 20px 20px;
+}
+
+.faq-answer p {
+	padding: 0 3% 1% 3%;
+	margin-top: 0;
+}
+
+.faq-icon {
+	margin-left: auto;
+	transition: transform 0.2s;
+	transform: rotate(-90deg);
+}
+
+.faq-question.active .faq-icon {
+	transform: rotate(0deg);
+	/* Rotate icon to form "-" symbol */
+}
+
+#footer-banner {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	object-fit: cover;
+	box-shadow: 0px 0 1.5rem rgba(73, 73, 73);
+	margin-bottom: -6%;
+}
+
+.text-overlay-footer {
+	position: relative;
+	transform: translateY(-90%);
+	color: rgb(255, 255, 255);
+	font-size: 5rem;
+	text-align: center;
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgb(0, 0, 0);
+	cursor: default;
+	user-select: none;
+}
+
 /* MAIN CONTENT ENDS HERE */
+
 
 /* FOOTER STARTS HERE */
 
 .footer {
+	position: absolute;
 	overflow: hidden;
-	box-shadow: 0 0 1.5em 0.2em rgb(73, 73, 73);
 }
 
 #summary-footer {
