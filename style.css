@@ -244,7 +244,7 @@ body {
 #main img {
 	position: relative;
 	width: 100%;
-	height: 40vh;
+	height: 300px;
 	object-fit: cover;
 	box-shadow: 0px 12px 20px 2px rgba(0, 0, 0, 0.6);
 	margin-bottom: -3%;
@@ -271,7 +271,7 @@ body {
 
 .text-overlay {
 	position: relative;
-	top: -16vh;
+	top: -110px;
 	color: rgb(255, 255, 255);
 	font-size: 5rem;
 	text-align: center;
@@ -382,7 +382,7 @@ body {
 .faq-question {
 	position: relative;
 	width: 100%;
-	padding: 3%;
+	padding: 3% 8% 3% 7.5%;
 	text-align: left;
 	background-color: #ffffff;
 	border: none;
@@ -412,6 +412,8 @@ body {
 	transition: max-height 0.1s ease-out;
 	background-color: #ffffff;
 	font-size: 1.2rem;
+	padding: 0 12% 0% 5%;
+	text-align: justify;
 }
 
 .faq-item:last-child .faq-answer {
@@ -434,31 +436,43 @@ body {
 	/* Rotate icon to form "-" symbol */
 }
 
-#footer-banner {
-	position: relative;
-	width: 100%;
-	height: 30vh;
-	object-fit: cover;
-	box-shadow: 0px 0 1.5rem rgba(73, 73, 73);
-	margin-bottom: -6%;
-}
-
-.text-overlay-footer {
-	position: relative;
-	transform: translateY(-90%);
-	color: rgb(255, 255, 255);
-	font-size: 5rem;
-	text-align: center;
-	font-weight: 600;
-	text-shadow: 0 0 1rem rgb(0, 0, 0);
-	cursor: default;
-	user-select: none;
-}
-
 /* MAIN CONTENT ENDS HERE */
 
 
 /* FOOTER STARTS HERE */
+
+.work-harder {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	margin: 5% 0 0 0;
+	box-shadow: 0px 0 1.5rem rgba(73, 73, 73);
+}
+
+.work-harder h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(255, 255, 255);
+	font-size: 4vw;
+	font-weight: 600;
+	text-shadow: 0 0 1rem rgb(0, 0, 0);
+	cursor: default;
+	user-select: none;
+	margin: 0;
+	z-index: 1;
+}
+
+#footer-banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 
 .footer {
 	position: absolute;
@@ -473,7 +487,7 @@ body {
 	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 25vh;
+	height: 250px;
 	font-weight: 600;
 	font-size: 1.2rem;
 	display: grid;
